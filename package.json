@@ -1,0 +1,43 @@
+{
+  "name": "chatspeak",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "dev:flask": "cd flask-api && call venv\\Scripts\\activate && python app.py",
+    "dev:all": "concurrently \"npm run dev:flask\" \"npm run dev\" --names \"FLASK,NEXT\" --prefix-colors \"blue,green\"",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@deepgram/sdk": "^3.13.0",
+    "@google-cloud/speech": "^7.2.1",
+    "@google/generative-ai": "^0.24.1",
+    "@huggingface/inference": "^4.13.3",
+    "chalk": "^5.6.2",
+    "concurrently": "^9.2.1",
+    "firebase": "^12.6.0",
+    "firebase-admin": "^13.6.0",
+    "framer-motion": "^12.23.24",
+    "next": "16.0.3",
+    "next-auth": "^5.0.0-beta.30",
+    "openai-whisper": "^1.0.2",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "react-firebase-hooks": "^5.1.1",
+    "react-hot-toast": "^2.6.0",
+    "react-icons": "^5.5.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.0.3",
+    "tailwindcss": "^4",
+    "typescript": "^5",
+    "concurrently": "^8.2.2"
+  }
+}
